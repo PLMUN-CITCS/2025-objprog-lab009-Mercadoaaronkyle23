@@ -1,43 +1,53 @@
-public class SelectionStatementsDemo {
+public class SwitchStatementDemo {
     public static void main(String[] args) {
+int dayOfWeek = 4;
 
-int studentScore = 82;
-
-if (studentScore >= 60) {
-   System.out.println("You passed the exam!");
+switch (dayOfWeek) {
+    case 1:
+        System.out.println("Monday: Start of the work week.");
+        break;
+    case 2:
+        System.out.println("Tuesday: Keep going!");
+        break;
+    case 3:
+        System.out.println("Wednesday: Midweek.");
+        break;
+    case 4:
+        System.out.println("Thursday: Almost there.");
+        break;
+    case 5:
+        System.out.println("Friday: Weekend is near.");
+        break;
+    case 6:
+        System.out.println("Saturday: Enjoy your day off!");
+        break;
+    case 7:
+        System.out.println("Sunday: Rest and recharge.");
+        break;
+    default:
+        System.out.println("Invalid day.");
 }
 
-if (studentScore >= 90) {
-   System.out.println("Excellent performance!");
-} else {
-   System.out.println("Keep improving!");
-}
+char studentGrade = 'B';
 
-if (studentScore >= 60) {
-   if (studentScore >= 90) {
-      System.out.println("Grade: A");
-   } else {
-      if (studentScore >= 75) {
-            System.out.println("Grade: B");
-      } else {
-            System.out.println("Grade: C");
-      }
-   }
-} else {
-   System.out.println("Grade: F");
+switch (studentGrade) {
+    case 'A':
+        System.out.println("Excellent!");
+        break;
+    case 'B':
+        System.out.println("Good job!");
+        break;
+    case 'C':
+        System.out.println("Well done!");
+        break;
+    case 'D':
+        System.out.println("You passed.");
+        break;
+    case 'F':
+        System.out.println("Better luck next time.");
+        break;
+    default:
+        System.out.println("Invalid grade.");
 }
-
-if (studentScore >= 90) {
-   System.out.println("Multi-way Grade: A");
-} else if (studentScore >= 80) {
-   System.out.println("Multi-way Grade: B");
-} else if (studentScore >= 70) {
-   System.out.println("Multi-way Grade: C");
-} else if (studentScore >= 60) {
-   System.out.println("Multi-way Grade: D");
-} else {
-   System.out.println("Multi-way Grade: F");
-}
-
     }
 }
